@@ -55,20 +55,6 @@ Typecho 插件：当有新评论或评论被回复时，通过 SMTP 发送邮件
 
 ---
 
-## 关于 PHPMailer（lib 目录）与版权
+## PHPMailer
 
-本插件使用 [PHPMailer](https://github.com/PHPMailer/PHPMailer) 发送邮件，`lib/PHPMailer/` 下为 PHPMailer 源码，采用 **LGPL-2.1** 许可证。插件仅按需加载 `Exception.php`、`PHPMailer.php`、`SMTP.php`，未修改其代码，并保留其文件头中的版权与许可声明。
-
-- **是否侵权**：在保留 PHPMailer 的版权与许可声明、并注明使用 PHPMailer（如本 README）的前提下，将 PHPMailer 与插件一起分发是符合 LGPL-2.1 的，不构成侵权。
-- **Submodule 还是当前形式**：
-  - **当前形式（直接包含 lib/PHPMailer）**：用户下载/克隆后即可使用，无需执行 `git submodule update`，对插件使用者更友好，是常见做法。
-  - **Submodule**：依赖关系清晰、便于跟踪 PHPMailer 上游更新，但用户需 `git clone --recursive` 或单独执行 `git submodule update --init`，对非开发者稍不友好。
-
-**建议**：若主要面向最终用户分发插件，保持当前“直接包含 lib”的方式即可，并在 README 与发布说明中注明使用了 PHPMailer（LGPL-2.1）。若仓库主要给开发者协作、且希望严格区分“本仓库代码”与“第三方依赖”，可改为 submodule，并在 README 中说明克隆后需初始化 submodule。
-
----
-
-## 许可证
-
-本插件（CommentMailNotify 自身代码）可采用你选择的开源协议发布。  
-`lib/PHPMailer/` 下的文件遵循 [PHPMailer 的 LGPL-2.1 许可证](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)。
+本插件使用 [PHPMailer](https://github.com/PHPMailer/PHPMailer) 发送邮件，`lib/PHPMailer/` 下文件遵循 [LGPL-2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)。

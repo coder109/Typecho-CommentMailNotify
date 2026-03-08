@@ -55,20 +55,6 @@ A Typecho plugin that sends email notifications via SMTP when a new comment is p
 
 ---
 
-## About PHPMailer (lib) and licensing
+## PHPMailer
 
-This plugin uses [PHPMailer](https://github.com/PHPMailer/PHPMailer) for sending email. The files under `lib/PHPMailer/` are PHPMailer source code under the **LGPL-2.1** license. The plugin only loads `Exception.php`, `PHPMailer.php`, and `SMTP.php`, does not modify them, and keeps their copyright and license headers.
-
-- **Legal**: Distributing PHPMailer with the plugin while keeping its notices and stating its use (e.g. in this README) complies with LGPL-2.1 and does not constitute infringement.
-- **Bundled vs submodule**:
-  - **Bundled (current)**: Users can download or clone and use the plugin without `git submodule update`; common for end-user plugins.
-  - **Submodule**: Clear dependency boundary and easier PHPMailer updates; users need `git clone --recursive` or `git submodule update --init`.
-
-**Recommendation**: For end-user distribution, keep the current bundled form and mention PHPMailer (LGPL-2.1) in the README and release notes.
-
----
-
-## License
-
-The plugin’s own code (CommentMailNotify) may be released under the license you choose.  
-Files under `lib/PHPMailer/` are under [PHPMailer’s LGPL-2.1 license](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html).
+This plugin uses [PHPMailer](https://github.com/PHPMailer/PHPMailer) for sending email. Files in `lib/PHPMailer/` are under [LGPL-2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html).
